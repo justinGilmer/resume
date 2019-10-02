@@ -1,83 +1,67 @@
 \documentclass[margin,line]{resume}
 \usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{siunitx}
+
+% from https://tex.stackexchange.com/questions/156383/typesetting-programming-packages-libraries-in-latex
+\newcommand{\pkg}[1]{\texttt{#1}}
+
 
 \begin{document}
-\name{\Large Samuel Brotherton}
+\name{\Large Justin B. Gilmer}
 \begin{resume}
     \section{\mysidestyle Contact\\Information}
 
-    Phone: (801) 927-0219       \hfill LinkedIn: \url{https://www.linkedin.com/in/sbrother} \\
-    \noindent Email: sam@cairnlabs.com  \hfill Website: \url{http://www.cairnlabs.com} \vspace{0mm}\\\vspace{-4.5mm}
+    Phone: (864) 542-6561           \hfill LinkedIn: \url{https://www.linkedin.com/in/justin-b-gilmer}\\
+    \noindent Email: justin.b.gilmer@gmail.com  \hfill GitHub: \url{https://github.com/justinGilmer}\vspace{0mm}\\\vspace{-4.5mm}
 
     \section{\mysidestyle Education}
 
-    \textbf{Harvard University}, Cambridge, MA \vspace{2mm}\\\vspace{1mm}%
-    \textsl{B.A., Mathematics and East Asian Studies} \hfill \textbf{Sep 2008 -- May 2012}\\
-    Received highest honors for senior thesis analyzing over 200,000 Chinese
-    blog posts, algorithmically detecting mutations in the Chinese language in
-    response to censorship. Completed coursework in abstract algebra,
-    Galois theory, topology, real and complex analysis, probability theory, and
-    linguistics.
+    \textbf{Vanderbilt University}, Nashville, TN \vspace{2mm}\\\vspace{1mm}%
+    \textsl{M.S., Materials Science} \hfill \textbf{Aug 2016 -- Dec 2019 (Expected)}\\
+   Continued computational chemistry research and became one of the lead developers on a set of open-source Python libraries designed to provide a simulation engine-agnostic platform to initialize chemical systems of interest in a document-able, reproducible fashion (\url{https://mosdef.org}). Completed course-work in scientific computing, condensed matter physics, and advanced scientific computing.
 
+
+    \textbf{Clemson University}, Clemson, SC \vspace{2mm}\\\vspace{1mm}%
+    \textsl{B.S., Materials Science and Chemistry Minor} \hfill \textbf{Aug 2012 -- May 2016}\\
+    Participated in computational chemistry research for 3 semesters, developing helper tools for the lab in Python to detect and enumerate alkane molecules of various lengths from high temperature reactive forcefield molecular dynamics simulations.
+    % Commented out for now, not applicable for data-science or software-dev
+    % Received certification as a Certified SOLIDWORKS Associate (CSWA), and was historian for 1 year of the Phi Psi honors fraternity
+    Completed course-work in multi-variable calculus, differential equations, data structures and algorithms, software development, and physical chemistry.
+
+    
     \section{\mysidestyle Professional\\Experience}
 
-    \textbf{Cairn Labs}, Salt Lake City, UT \vspace{2mm}\\\vspace{1mm}%
-    \textsl{President and Founder} \hfill \textbf{Sep 2011 -- present}\\
-    Full stack software development for clients, with a focus on building
-    server-side applications that integrate state-of-the-art NLP and
-    machine learning. Notable projects include:
+    \textbf{Vanderbilt Univeristy}, Nashville, TN \vspace{2mm}\\\vspace{1mm}%
+    \textsl{Graduate Research Assistant} \hfill \textbf{Aug 2016 -- Present}\\
+    Conducted various computational studies of organic chemistry-based compounds using molecular modeling as well as open-source Python software development. Notable work includes:
 
-    \begin{itemize}
-    \item A deep learning based conversational UI framework to power
-      will.i.am's new wireless earphones and other applications. Backed by
-      Python, Tensorflow, and other technologies. Supports multiple languages,
-      extensible dialogue flows, and includes a type system that integrates with
-      a custom knowledge base. Our software had a significant role in the
-      success of the client's recent \$117M fundraising round
-      (\url{https://goo.gl/iMvVTt}).
-    \item An intelligent agent for a healthcare client that performs realtime
-      conversational analysis from raw audio. Uses an open source library I
-      built for training and serving machine learning models from Elixir
-      (\url{https://github.com/cairn-labs/mlem}).
-    \item A web-based business intelligence tool allowing decision-makers
-      within the pharmaceutical industry to optimize total revenue of product
-      launches across many countries. Backed by Elixir/Phoenix and React.js;
-      includes a fast, concurrent traveling salesman problem solver.
-    \item An advertising server to display appropriate concert ticket offers
-      to users, based on user-level and page-level contextual targeting. Backed
-      by Elixir/Phoenix, Python, PostGIS, and React.js.
+    \begin{itemize}[itemsep=0.5mm, parsep=2pt]
+    \item Designed and implemented an extensible ``plug-in'' system for our chemical system building library \pkg{mBuild} allowing for dynamic discovery of plug-ins through the use of the \pkg{setuptools} \pkg{entrypoint} functionality.
+    \item Continued development of our lab's Python libraries by using software development best practices such as unit testing, collaborative code review, continuous integration, object-oriented design patterns, fork and pull request model for code contributions, and input sanitization 
+    \item Became one of the lead software developers of the lab's open-source Python libraries \url{https://github.com/mosdef-hub}, now involved in a national grant involving 7 other universities.
+    \item Managed and instructed the simulation of over \num{36000} chemical systems, performed time-series and statistical analysis of data from these systems to use partly as testing/training data of a random forest regression model from \pkg{sklearn}, producing a predictive model linking chemical features to tribological properties.
+    \item Mentored undergraduate and high school students year-round in molecular simulation, data analysis, and scientific software development best practices.
+      %Taught version control, software development using Python, data analysis, and interacting with the UNIX shell.
+      %Aided students in all aspects of molecular simulation, including award winning poster presentations.
     \end{itemize}
 
-    \textbf{Cairn Geographics}, Salt Lake City, UT \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Founder} \hfill \textbf{Feb 2017 -- present}\\
-    A SaaS business intelligence product to help analysts enrich their customer
-    data with geographic columns (latitudes/longitudes, ZIP codes, etc) and
-    demographics. Processing is server-based but integrated with Microsoft
-    Excel, Python, and the Domo platform: \url{www.cairngeographics.com}.
 
-    \textbf{Google}, Venice, CA \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Software Engineer III} \hfill \textbf{Jun 2014 -- Mar 2016}\\
-    Worked on a small team using natural language processing and other machine
-    learning techniques to improve advertisement quality. Led a 20\% project
-    related to mining semantic information from web data, which was adopted by
-    several teams across different product areas. Built a named entity
-    recognition system in C++ and a link detection algorithm that runs on very
-    large graphs; contributed to a topic model for clustering semantic entities.
+    \textbf{Vanderbilt Univeristy}, Nashville, TN \vspace{2mm}\\\vspace{1mm}%
+    \textsl{Graduate Teaching Assistant} \hfill \textbf{Aug 2016 -- Dec 2019}\\
+    Developed course-work and lecture material for a 3\textsuperscript{rd} year molecular simulation course as well as a 1\textsuperscript{st} year engineering computation course.
+    Created lessons utilizing Jupyter Notebooks, GitHub Classroom, teaching version control and Python to students with little to no experience of programming concepts.
+    %Also performed teaching-assistant duties for a 3\textsuperscript{rd} year mechanical engineering lab, as well as an additional 1\textsuperscript{st} year engineering course.
 
-    \textbf{Whisper}, Venice, CA \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Software Engineer and Data Scientist} \hfill \textbf{Mar 2013 -- Apr 2014}\\
-    Sole data scientist at a rapidly expanding social media startup
-    seeing upwards of three billion monthly pageviews. Designed and built an NLP
-    service to extract topics and tags from posts, predict image searchterms
-    from unstructured text, and target content to users. Implemented a new
-    geographic search system using PostGIS that decreased search time by
-    90\%. Worked closely with the front and backend development teams, writing
-    production code in Erlang and Python.
-
+    \textbf{Clemson Univeristy}, Clemson, SC \vspace{2mm}\\\vspace{1mm}%
+    \textsl{Tutor} \hfill \textbf{Aug 2013 -- May 2016}\\
+    Provided academic tutoring to 500 first year science and engineering students as part of the Residents in Science and Engineering (RiSE) Living-Learning Community (LLC) (\url{https://1n.pm/rise}).
+    %Led general chemistry study sessions for exam preparation.
+    %Mentored minority students through a program offered by the RiSE LLC.
 
     \section{\mysidestyle Programming\\Experience}
 
-    \emph{Languages:} Python, C++, C\#, F\#, Erlang, Elixir, Mathematica, Haskell, Bash, C, \LaTeX \\
-    \emph{Data Technology:} Cassandra, Redis, PostgreSQL, ElasticSearch/Lucene, MySQL, MongoDB
+    \emph{\textbf{Proficient:}} Python, Bash, Git/Version Control\\
+    \emph{\textbf{Comfortable:}} Unit Testing, Continuous Integration, Statistical Analysis, Time-series Analysis, SciPy, Pandas, scikit-learn, Matplotlib, GNU/Linux, Unix-like operating systems, C, C\texttt{++}, Java, \LaTeX, Fortran, Gnuplot, Docker, Singularity, Object-oriented Programming
 \end{resume}
 \end{document}
