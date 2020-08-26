@@ -1,0 +1,275 @@
+\documentclass[margin, line]{res}
+
+% \usepackage{feynmf}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\usepackage{fontspec}
+\defaultfontfeatures{
+    Path = /usr/local/texlive/2019/texmf-dist/fonts/opentype/public/fontawesome/}
+\usepackage{fontawesome}
+\usepackage{academicons}
+
+\pagenumbering{gobble}
+
+\definecolor{darkcerulean}{rgb}{0.03, 0.27, 0.49}
+\definecolor{cobalt}{rgb}{0.0, 0.28, 0.67}
+\definecolor{blue(pigment)}{rgb}{0.2, 0.2, 0.6}
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+\definecolor{coolblack}{rgb}{0.0, 0.18, 0.39}
+\hypersetup{colorlinks=true, urlcolor=darkcerulean}
+
+\newcommand{\li}{https://linkedin.com/in/Justin-b-gilmer}
+\newcommand{\gh}{https://github.com/justinGilmer}
+\newcommand{\oid}{https://orcid.org/0000-0002-6915-5591}
+%\newcommand{\personalsite}{http://flipdazed.github.io}
+
+%\newcommand{\MScStructure}{https://higgs.ph.ed.ac.uk/msc/programme-structure}
+%\newcommand{\EdDiss}{}
+%\newcommand{\EdPS}{http://www.drps.ed.ac.uk/15-16/dpt/cxpgph11085.htm}
+%\newcommand{\EdSym}{http://www.drps.ed.ac.uk/15-16/dpt/cxpgph11097.htm}
+%\newcommand{\EdSMod}{http://www.drps.ed.ac.uk/15-16/dpt/cxmath11029.htm}
+%\newcommand{\EdQT}{http://www.drps.ed.ac.uk/15-16/dpt/cxphys11019.htm}
+%\newcommand{\EdPP}{http://www.drps.ed.ac.uk/15-16/dpt/cxphys11042.htm}
+%\newcommand{\EdSQM}{http://www.drps.ed.ac.uk/15-16/dpt/cxphys10083.htm}
+%\newcommand{\EdMQFT}{http://www.drps.ed.ac.uk/15-16/dpt/cxpgph11094.htm}
+%\newcommand{\EdRQFT}{http://www.drps.ed.ac.uk/15-16/dpt/cxphys11021.htm}
+%\newcommand{\EdNR}{http://www.drps.ed.ac.uk/15-16/dpt/cxphys10090.htm}
+%
+%\newcommand{\IOP}{http://www.iop.org}
+%\newcommand{\IOM}{http://www.ima.org.uk}
+%
+%\newcommand{\AucklandUni}{https://www.cs.auckland.ac.nz/en.html}
+%\newcommand{\AucklandResearch}{http://homepages.engineering.auckland.ac.nz/~smohan/Research.html}
+%\newcommand{\algo}{https://twitter.com/flipdazed}
+%\newcommand{\Webranz}{http://webranz.com}
+%\newcommand{\cbkPF}{http://www2.warrants.commerzbank.com/Products/ProductSearchAdvanced.aspx?pc=228&c=2181036}
+%\newcommand{\cbk}{https://www.commerzbank.com/}
+%\newcommand{\GE}{http://www.ge-energy.com/products_and_services/products/wireline_systems/index.jsp}
+%\newcommand{\UoS}{http://www.surrey.ac.uk/physics/}
+%\newcommand{\UoE}{https://higgs.ph.ed.ac.uk}
+%\newcommand{\NHS}{http://www.nottinghamhigh.co.uk/}
+%\newcommand{\Mentor}{http://www.surrey.ac.uk/currentstudents/accommodation/mentoring/}
+%\newcommand{\Rubix}{http://www.ussu.co.uk/events/Pages/Rubix.aspx}
+%\newcommand{\sixsigma}{http://en.wikipedia.org/wiki/Six_Sigma}
+%\newcommand{\SC}{http://www.jstor.org/discover/10.2307/2330812?uid=3738032&uid=2&uid=4&sid=21104643963563}
+%\newcommand{\LV}{http://en.wikipedia.org/wiki/Local_volatility}
+%\newcommand{\USSU}{http://www.ussu.co.uk/Pages/Default.aspx}
+%\newcommand{\Nomura}{http://www.nomura.com}
+%
+%\newcommand{\FinRisk}{http://www2.surrey.ac.uk/maths/study/ug/modules/year3/financial_risk_management.htm}
+%\newcommand{\FinDer}{https://modcat.surrey.ac.uk/ipo/2013-14/PHY3048.htm}
+%\newcommand{\PhysComp}{http://modcat.surrey.ac.uk/ipo/2013-14/PHY3042.htm}
+%\newcommand{\MathsIV}{https://sits.surrey.ac.uk/live/ipo/PHY2056-0003.htm}
+%\newcommand{\BFGS}{http://en.wikipedia.org/wiki/Broyden-Fletcher-Goldfarb-Shanno_algorithm}
+%\newcommand{\GARCH}{https://www.quantnet.com/threads/student-t-innovation-problems-garch-1-1.15612/\#post-125141}
+%\newcommand{\Jim}{http://www.jimal-khalili.com/teaching}
+%\newcommand{\lightmatter}{http://modcat.surrey.ac.uk/ipo/2014-15/PHY3043.htm}
+%\newcommand{\thermal}{http://personal.ph.surrey.ac.uk/~phs1jk/2tp/Index.htm}
+%\newcommand{\Fonterra}{https://www.fonterra.com/nz/en/About/Global+Dairy+Trade} % https://www.fonterra.com
+%\newcommand{\robotwealth}{https://robotwealth.com/fundamentals-of-algorithmic-trading-curriculum/}
+%\newcommand{\pyalgotrade}{https://github.com/gbeced/pyalgotrade/tree/master/pyalgotrade}
+%
+%\newcommand{\susnow}{}%http://www.susnow.co.uk/}
+%\newcommand{\eussc}{}%http://www.eussc.com}
+%\newcommand{\Colours}{http://www.ussu.co.uk/ClubsSocieties/Sport/Colours\%20Documents/Colours\%20-\%20Individual\%20Club\%20Exceptions\%20to\%20Colours\%20Criteria\%202015.pdf}
+%\newcommand{\Investors}{}%http://www.ussu.co.uk/_layouts/15/listform.aspx?PageType=4&ListId=\%7BA7F9F9F7\%2D400C\%2D4935\%2DA942\%2D261CD2EB0385\%7D&ID=9&ContentTypeID=0x01002CF74A4DAE39480396EEA7A4BA2BE5FB007726A7C1BCA6FD4195927B28465DCEE5}
+%
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+
+% if using pdflatex:
+% \setlength{\pdfpagewidth}{\paperwidth}
+% \setlength{\pdfpageheight}{\paperheight}
+%
+\newenvironment{list1}{
+	\begin{list}{\ding{113}}{%
+		\setlength{\itemsep}{0in}
+		\setlength{\parsep}{0in} \setlength{\parskip}{0in}
+		\setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+		\setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+	\begin{list}{$\bullet$}{%
+		\setlength{\itemsep}{0in}
+		\setlength{\parsep}{0in} \setlength{\parskip}{0in}
+		\setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+		\setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+\begin{document}
+
+\name{
+    \vspace*{-.5in}
+	{\huge Justin Gilmer}
+	\hspace*{.1in}
+	{
+ 		\href{\li}{\faLinkedin}
+		\href{\gh}{\faGithub}
+		\href{\oid}{\aiOrcid}
+	}
+	\vspace*{.1in}
+	}
+
+\begin{resume}
+\section{\sc Contact Information}
+\vspace{.05in}
+\begin{tabular}{@{}p{3.17in}p{4in}}
+	% 107 Marchmont Road,
+    \href{mailto:justin.b.gilmer@gmail.com}
+    			{Justin.B.Gilmer@gmail.com}\\
+        %& \href{\personalsite}{\personalsite}\\
+        % & Currently working on Deep Learning projects.\\
+	% Edinburgh, EH9 1HA
+     +1 (864) 542 6561 
+        % & Available to start from Nov 1st\\
+\end{tabular}
+
+\section{\sc Background}
+
+\begin{list2}
+    \item Managing and leading collaborative software development efforts across multiple universities and experience levels
+    \item Mentoring graduate and undergraduate students in software development best practices
+    \item Developing course material and teaching undergraduate-level chemical and mechanical \\engineering classes
+    %\item Software development background: computational chemistry, open source python libraries for computational chemistry
+    %\item Administration and maintenance of in-lab cluster,
+    \item Performing large scale time series data analysis and regression analysis
+\end{list2}
+
+% \vspace{0.15in}
+\section{\sc Professional Experience}
+
+{\bf {Vanderbilt University}}, Interdisciplinary Materials Science, Nashville, TN \\
+\vspace{-.3cm}
+{\em Graduate Student}
+    \hfill{May 2016 - Present}\\
+
+\begin{list2}
+\item Designed, led and organized a computational engineering course, teaching \verb|python| to freshman engineers
+\item Mentored high school and undergraduate students year-round in molecular simulation and \verb|python| software development
+\item Maintained and updated lab computational resources, including a 14-node computing cluster
+\item Developed and implemented an extensible "plug-in" API using \verb|setuptools|
+\item Packaged and released multiple versions of our lab's open-source \verb|python| libraries with \verb|conda-build|, \verb|conda-forge|, and \verb|pypi|
+\item Presented our lab's open source libraries and computational research \href{mosdef.org} at multiple academic \\conferences through talks, posters, and tutorial sessions
+\item Created tutorials for using our lab's software, and led tutorial sessions at conferences
+\item Daily user: \verb|Python| (numpy, unyt, pandas, setuptools, pytest, jupyter, matplotlib), \verb|git|, \verb|bash|, \verb|latex| 
+\end{list2}
+
+{\bf {Vanderbilt University}}, Physics and Astronomy, Nashville, TN \\
+\vspace{-.3cm}
+{\em Summer Researcher}
+	\hfill{May 2016 - Nov. 2016}\\
+
+\begin{list2}
+\item Assisted in the development and validation of time-dependent density functional theory \\(TD-DFT) algorithms to increase accuracy without reducing performance
+\item Tested various implementations of the algorithm and profiled their effectiveness
+\item Coauthored a publication from the results of this project
+\item Daily user: \verb|FORTRAN90|, \verb|subversion|, \verb|git|, \verb|gnuplot|
+\end{list2}
+
+{\bf {Clemson University}}, Chemistry, Clemson, SC \\
+\vspace{-.3cm}
+{\em Undergraduate Researcher}
+	\hfill{May 2015 - May 2016}\\
+
+\begin{list2}
+\item Developed helper tools in \verb|python| for the graduate and undergraduate students in the lab to identify molecular fragments from high temperature simulations
+%\item Performed molecular simulations to study the thermodynamics of melting of various solids
+\item Began development of a \verb|C++| project to analyze simulation data to estimate melting point
+\item Daily user: \verb|python|, \verb|gnuplot|, \verb|C/C++|, \verb|bash|
+\end{list2}
+
+{\bf {Clemson University}}, Housing and Dining, Clemson, SC \\
+\vspace{-.3cm}
+{\em Academic Tutor}
+	\hfill{Aug. 2013 - May 2016}\\
+
+\begin{list2}
+\item Provided academic tutoring to 500 freshman science and engineering students
+\item Demonstrated high proficiency in all first-year engineering and science courses as well as many sophomore and other specialized courses
+\item Mentored minority students in addition to standard tutoring services
+\end{list2}
+
+% \vspace{0.15in}
+\section{\sc Education}
+{\bf Vanderbilt Univeristy}, M.Sc. Materials Science\hfill {2016 - Present}
+\\
+    \vspace*{-.15in} % this space is required to make the Universities close together
+    % this is the format for the shorter version
+    \vspace{-.3cm} % pulls the emph section up a bit and looks nicer
+    %\emph{Dissertation}: Generalised Hybrid Monte Carlo - \verb|Python| -
+    %         supervised by model authors\\
+    % this is the format for the more descriptive version
+    % \begin{list1}
+    %     \item[] \emph{Dissertation}: Generalised Hybrid Monte Carlo - \verb|Python| -
+    %     supervised by model authors
+    % \end{list1}
+    %     \vspace*{-.1in}
+	% \begin{tabular}{@{}p{3in}p{4in}}
+	% 	S1: \href{\EdSym}{Relativistic Quantum Field Theory}	\textit{100\%}
+	% 	& S2: \href{\EdMQFT}{Modern Quantum Field Theory}		\textit{92\%}\\
+	% 	S1: \href{\EdPS}{Problem Solving (Advanced Math)}		\textit{96\%}
+	% 	& S2: \href{\EdSMod}{Stochastic Modelling}				\textit{82\%}\\
+	% 	% S1: \href{\EdQT}{Quantum Theory}
+	% 	% & S1: \href{\EdPP}{Particle Physics}\\
+	% 	S1: \href{\EdSym}{Symmetries of Particles \& Fields}	\textit{93\%}
+	% 	& S2: \href{\EdSym}{Numerical Recipes (Python)}			\textit{80\%}
+	% \end{tabular}
+
+{\bf Clemson University}, B.Sc. Materials Science, Minor Chemistry
+\hfill {2012 - 2016}
+\\
+	\vspace*{-.15in}
+    %\emph{Dissertation}: Modelling Value at Risk (VaR) %\textit{77\%}
+    %            - \verb|Fortran| - original implementation
+    % this is the format for the more descriptive version
+    % can also add tabular env as above
+    % \begin{list1}
+    %     \item[] \emph{Dissertation}: ``Modelling Value at Risk (VaR)'' %\textit{77\%}
+    %         - \verb|Fortran| - original implementation
+    % \end{list1}
+    % \vspace*{-.1in}
+
+
+%\vspace{0.15in}
+%\section{\sc Projects}
+% \begin{list2}
+% \end{list2}
+
+%\vspace{0.0in}
+%\section{\sc Extracurricular}
+%{\href{\IOP}{Institute of Physics}}
+%\vspace*{-.0in}
+%{\em Member (MInstP)} \hfill { 2014 - Present} \\
+%\vspace*{-0.3in}
+%%
+%{\href{\IOM}{Institute of Mathematics}}
+%{\em Associate Member (AMIMA)} \hfill { 2014 - Present} \\
+%\vspace*{-0.3in}
+%
+% {\href{\eussc}{Edinburgh University Snowsports}}
+% 	{\em Snowboard Team} \hfill {2015 - 2016}
+% \\
+%{\susnow}{Surrey University Snowsports}
+%    {\em Captain / Social Secretary / Elite Athlete Scholar} \hfill {2009-2013}
+% {\href{\susnow}{Surrey University Snowsports}}
+%     {\em Snowboard Captain (Awarded \href{\Colours}{Full Colours})} \hfill {2012 - 2013}
+% \\
+% {\href{\susnow}{Surrey University Snowsports}}
+%     {\em Social Secretary (``\href{\Investors}{Investors in Club}'' Award)} \hfill {2010 - 2011}
+
+
+% \vspace{0.15in}
+% \section{\sc Awards \& Grants}
+% \begin{list2}
+%     \item Scargill Educational Foundation \hfill {2015}
+%     \item The Ann Powtrell Foundation \hfill {2015}
+% \end{list2}
+%\vspace{0.1in}
+%\centerline{\emph{Referees Available on Request}}
+
+\end{resume}
+\end{document}
